@@ -1,0 +1,156 @@
+/*底部三个div通用样式*/
+.Allfooter{
+  margin: 3rem 4.5rem 1.5rem 4.5rem;
+  padding: 0.4rem 0;
+  height:100%;
+  background:#fff;
+}
+/*第一个div*/
+#F_div{
+  margin-left:3rem;
+}
+#F_div>h3,#F_div_media>form>label,#S_div>h3{
+  font-size:1.5rem;
+  color:#646464;
+  margin:0;
+  padding:0.5rem 0;
+}
+#F_div>ul{
+  list-style: none;
+  height:50px;
+  margin:0;
+  padding:0;
+  padding-top:0.6rem;
+}
+#F_div>ul>li{
+  float:left;
+  line-height:40px;
+  width:32%;
+}
+#F_div>ul>li>a{
+  text-decoration: none;
+  display:block;
+  width:50%;
+  line-height:30px;
+  font-size:0.8rem;
+  border-top: 1px dashed #b2b2b2;
+  border-bottom: 1px dashed #b2b2b2;
+  transition: all 0.25s ease;
+}
+#F_div>ul>li>a::before{
+  content: ">";
+  padding:0 0.3rem;
+}
+#F_div>ul>li>a:hover{
+  color:#000;
+  background: #e3e3e3;
+}
+
+/*小屏幕下的第一个div*/
+#F_div_media>form,#T_div_media>form{
+  padding:0 2rem;
+  line-height: 2;
+  padding-bottom: 1rem;
+}
+#F_div_media>form>label{
+  font-size:1rem;
+}
+#F_div_media>form>select,#T_div_media>form>select{
+  width:100%;
+  height:40px;;
+  padding-left:0.5rem;
+  font-size: 0.85rem;
+  color:#646464;
+  border-color: #ddd;
+}
+#F_div_media>form>select:focus,#T_div_media>form>select:focus{
+  outline: none;
+  border-color: #646464;
+}
+
+/*第二个div*/
+#S_div{
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+#S_div>h3{
+  text-align: center;
+  color:#757575;
+}
+#S_div>#contact_Logo{
+  width:85px;
+  margin: 0.8rem auto;
+}
+#S_div>#contact_Logo>a:first-child{
+  margin-right:10px;
+  cursor: pointer;
+}
+.modal-content {
+  margin-top:15%;
+}
+#wechat .modal-body>img{
+  width:100%;
+}
+
+/*第三个div*/
+#T_div>ul{
+  list-style: none;
+  line-height: 80px;
+  padding:0;
+  margin: 0 auto;
+}
+#T_div>ul>li{
+  float:left;
+  width:25%;
+  text-align: center;
+}
+#T_div>ul>li>a{
+  font-size: 0.75rem;
+}
+.copy{
+  clear: both;
+  margin: 1rem 0;
+}
+.copy>p{
+  margin: 0;
+  font-size: 0.75rem;
+  text-align: center;
+}
+/*小屏幕下的第三个div(和第一个一样) 进行微调*/
+#T_div_media>form{
+  margin-top: 1rem;
+}
+
+
+
+
+
+/*媒体选择下的显示样式*/
+@media screen and (min-width:760px){
+  #F_div{
+    display:block;
+  }
+  #F_div_media{
+    display:none;
+  }
+  #T_div{
+    display:block;
+  }
+  #T_div_media{
+    display:none;
+  }
+}
+@media screen and (max-width:760px){
+  #F_div{
+    display:none;
+  }
+  #T_div{
+    display:none;
+  }
+  .Allfooter{
+    margin:3rem 1rem 1.5rem 1rem;
+  }
+  #S_div>h3{
+    font-size:1rem;
+  }
+}

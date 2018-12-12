@@ -1,0 +1,109 @@
+/*整体部分布局*/
+.my_container>.Banner_One,.my_container>.Banner_Two{
+  position: relative;
+  margin-bottom: 2rem;
+}
+/*banner第一部分*/
+/*轮播图片大小*/
+.my_container>.Banner_One>#Idx_swiper>div img{
+  width:100%;
+}
+/*轮播指示符调整*/
+.carousel-indicators li{
+  width:15px;
+  height:15px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 0.8rem;
+}
+.carousel-indicators li:hover{
+  background-color: #fff;
+}
+.carousel-control-prev,.carousel-control-next{
+  width: 10%;
+}
+.my_container>.Banner_One>div:last-child svg{
+  width:70%;
+  height:70%;
+}
+
+/*banner第二部分*/
+.my_container>.Banner_Two>ul{
+  list-style: none;
+  padding:0;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.my_container>.Banner_Two>ul>li{
+  display: inline-block;
+  background: #fff;
+  /* 媒体选择中写宽 */
+  /* width:0; */
+  margin-top: 2rem;
+}
+.my_container>.Banner_Two>ul>li a{
+  text-decoration: none;
+}
+.my_container>.Banner_Two>ul>li img{
+  width:100%;
+}
+.my_container>.Banner_Two>ul>li div{
+  margin-top: 0.5rem;
+  padding:0.5rem;
+  border-bottom: 2px solid transparent;
+}
+.my_container>.Banner_Two>ul>li:hover div{
+  border-bottom: 2px solid #E2001A;
+}
+.my_container>.Banner_Two>ul>li h3{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+.my_container>.Banner_Two>ul>li:hover h3{
+  color: #E2001A;
+}
+.my_container>.Banner_Two>ul>li p{
+  font-size: 0.8rem;
+}
+
+
+
+
+/*媒体选择下的显示样式*/
+@media screen and (min-width:760px){
+  .my_container>.Banner_Two>ul>li{
+    width:31.5%;
+  }
+}
+@media screen and (max-width:760px){
+  .my_container>.Banner_Two>ul>li{
+    width:45%;
+  }
+}
+@media screen and (max-width:480px){
+  .my_container>.Banner_Two>ul>li p{
+    display: none;
+  }
+}
+
+
+
+
+.swiper-Title a{
+  text-decoration: none;
+  width:20%;
+  color:#fff;
+  background: #E2001A;
+  position: absolute;
+  z-index: 5;
+  top:80%;
+  left: 15%;
+  padding:0.2rem 1rem;
+  transition: all 0.5s linear;
+}
+.swiper-Title a:hover{
+  color:#E2001A;
+  background: #fff;
+}

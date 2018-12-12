@@ -1,0 +1,176 @@
+/*最顶部小导航*/
+#topNav{
+    margin:0 4.5rem;
+}
+#topNav .myNav{
+    padding:0 1rem;
+    height:26px;
+    display: flex;
+    justify-content: space-between;
+}
+#topNav .myNav ul{
+    list-style: none;
+}
+#topNav .myNav ul li{
+    float: left;
+    height:26px;
+    margin-top: 0.1rem;
+    font-size: 0.87rem;
+    font-weight: 500;
+}
+#topNav .myNav ul:first-child li{
+    padding-left: 2rem;
+}
+#topNav .myNav ul:last-child{
+    margin-right: 5rem;
+}
+#topNav .myNav ul:last-child>li:first-child{
+    padding-right: 1.8rem;
+    background: url("../img/earth.png") no-repeat;
+}
+#topNav .myNav ul:last-child>li:nth-child(3){
+    padding-right: 1.3rem;
+    background: url("../img/login.png") no-repeat ;
+    background-size: 20px;
+}
+#topNav .myNav ul:last-child>li:nth-child(2):after{
+    content: "|";
+    padding:0 1rem;
+}
+
+/*大导航*/
+#topNav .BigNav{
+    background: #fff;
+}
+#topNav .BigNav #nav1{
+    list-style: none;
+    line-height: 126px;
+    height:126px;
+    margin-top: 0.2rem;
+    margin-bottom: 0;
+}
+#topNav .BigNav #nav1 li,#topNav .menu #nav2 li{
+    float: left;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+}
+#topNav .BigNav #nav1 li img{
+    width:130px;
+    height:25px;
+}
+#topNav .BigNav #nav1 li a{
+    text-align: center;
+}
+/*隐藏菜单*/
+.menu{
+    display:none;
+}
+#topNav .menu #nav2{
+    background:#fff;
+    list-style: none;
+    height: 50px;
+    margin-bottom: 0;
+}
+#topNav .menu #nav2 li{
+    margin-right: 5rem;
+}
+#topNav .menu #nav2 li a{
+    text-decoration: none;
+    color:#646464;
+}
+#topNav .menu #nav2 li a:hover{
+    color: #E2001A;
+}
+
+/*媒体查询导航栏样式*/
+#SmallNav{
+    padding:0;
+}
+.myNavbar{
+    display: flex;
+    justify-content: space-between;
+}
+#SmallNav>.myNavbar>a,#SmallNav>.myNavbar>button{
+    padding:8px 16px;
+}
+.navbar-light .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0) !important;
+}
+#SmallNav>.myNavbar>button:focus{
+    outline: none;
+}
+.navbar-light .navbar-nav .nav-link:focus {
+    color:#E2001A;
+}
+#SmallNav>#main{
+    box-shadow:  0 3px 8px #000;
+}
+#SmallNav>#main>ul>li>a{
+    width: 100%;
+    border-bottom:1px solid #ddd;
+    padding-right:30px;
+    padding-left:30px;
+}
+#SmallNav>#main>ul>li:last-child{
+    border-bottom:none;
+}
+#SmallNav>#main>ul>li>a>span{
+    float: right;
+}
+.myRotate{
+    transform: rotateX(180deg);
+}
+#SmallNav #demo>ul{
+    list-style: none;
+    padding-left:0;
+}
+#SmallNav #demo>ul>li{
+    padding:8px 0;
+    border-bottom:1px solid #ddd;
+}
+#SmallNav #demo>ul>li>a{
+    display: block;
+    text-decoration: none;
+    padding-left:60px;
+    letter-spacing: 0.05rem;
+}
+/*小导航的遮盖层*/
+.myHtml{
+    height:0px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 33;
+}
+
+/*媒体查询*/
+@media screen and (min-width:760px){
+    #topNav{
+        position: absolute;
+        z-index: 1999;
+        width:90%;
+        display:block;
+        top:0;
+    }
+    #SmallNav{
+        display:none;
+    }
+    .myHtml{
+        display: none !important;
+    }
+}
+@media screen and (max-width:760px){
+    #topNav{
+        display: none;
+    }
+    #SmallNav{
+        display: block;
+        position: absolute;
+        z-index: 1999;
+        width:100%;
+        top:0;
+    }
+} 
+

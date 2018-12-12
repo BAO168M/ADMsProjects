@@ -1,0 +1,44 @@
+body{
+    background: #EBEBEB;
+    letter-spacing: 0.03rem;
+    color:#646464;
+    /* 颜色:  黑---#646464    红---#E2001A */
+}
+/*容器自定义*/
+.my_container{
+    position: relative;
+    padding: 0;
+}
+/*改变默认a标签*/
+a{
+    color:#646464;
+}
+a:hover{
+    color:#646464;
+}
+
+
+
+
+
+/*媒体查询  */
+@media screen and (min-width:760px){
+    .WebFoot{
+        position: relative;
+        top:12rem;
+      }
+    .my_container{
+        top:12rem;
+        margin: 0 4.5rem;
+    } 
+}
+@media screen and (max-width:760px){
+    .WebFoot{
+        position: relative;
+        top:5rem;
+      }
+    .my_container{
+        top:5rem;
+        margin: 0 1rem;
+    }
+}
