@@ -5,6 +5,7 @@ $(function(){
         type:"get",
         success:function(res){
             $("#header").replaceWith(res);
+            //console.log(res)
 
             /*隐藏菜单*/
             //1  鼠标经过变色

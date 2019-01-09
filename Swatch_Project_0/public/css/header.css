@@ -134,6 +134,7 @@
     padding-left:60px;
     letter-spacing: 0.05rem;
 }
+
 /*小导航的遮盖层*/
 .myHtml{
     height:0px;
@@ -146,7 +147,7 @@
 }
 
 /*媒体查询*/
-@media screen and (min-width:760px){
+@media screen and (min-width:790px){
     #topNav{
         position: absolute;
         z-index: 1999;
@@ -161,7 +162,7 @@
         display: none !important;
     }
 }
-@media screen and (max-width:760px){
+@media screen and (max-width:790px){
     #topNav{
         display: none;
     }

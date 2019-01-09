@@ -1,6 +1,6 @@
 /*底部三个div通用样式*/
 .Allfooter{
-  margin: 3rem 4.5rem 1.5rem 4.5rem;
+  margin: 3rem 4.5rem 0rem 4.5rem;
   padding: 0.4rem 0;
   height:100%;
   background:#fff;
@@ -126,7 +126,7 @@
 
 
 /*媒体选择下的显示样式*/
-@media screen and (min-width:760px){
+@media screen and (min-width:790px){
   #F_div{
     display:block;
   }
@@ -140,7 +140,7 @@
     display:none;
   }
 }
-@media screen and (max-width:760px){
+@media screen and (max-width:790px){
   #F_div{
     display:none;
   }
@@ -148,7 +148,7 @@
     display:none;
   }
   .Allfooter{
-    margin:3rem 1rem 1.5rem 1rem;
+    margin:3rem 1rem 0rem 1rem;
   }
   #S_div>h3{
     font-size:1rem;

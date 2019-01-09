@@ -27,11 +27,61 @@
   height:70%;
 }
 
+/*轮播图上的了解更多*/
+
+/*js中的class样式*/
+.more1{
+  background: #E2001A;
+  animation: swiper-more1 0.3s linear 0.02s 1 normal forwards;
+}
+.more2{
+  background: #dd2d00;
+  animation: swiper-more2 0.3s linear 0.02s 1 normal forwards;
+}
+.swiper-Title a{
+  text-decoration: none;
+  width:20%;
+  color:#fff;
+  position: absolute;
+  z-index: 5;
+  top:80%;
+  padding:0.2rem 1rem;
+  transition: all 0.5s linear;
+}
+.swiper-Title a:hover{
+  color:#E2001A;
+  background: #fff;
+}
+/*了解更多的动画*/
+@keyframes swiper-more1{
+  0%{
+    left:100%;
+  }
+  50%{
+    left:50%;
+  }
+  100%{
+    left:15%;
+  }
+}
+@keyframes swiper-more2{
+  0%{
+    right:100%;
+  }
+  50%{
+    right:50%;
+  }
+  100%{
+    right:15%;
+  }
+}
+
 /*banner第二部分*/
 .my_container>.Banner_Two>ul{
   list-style: none;
   padding:0;
   display: flex;
+  /*换行*/
   flex-wrap:wrap;
   justify-content: space-between;
 }
@@ -41,6 +91,10 @@
   /* 媒体选择中写宽 */
   /* width:0; */
   margin-top: 2rem;
+  border-bottom: 2px solid transparent;
+}
+.my_container>.Banner_Two>ul>li:hover{
+  border-bottom: 2px solid #E2001A;
 }
 .my_container>.Banner_Two>ul>li a{
   text-decoration: none;
@@ -51,10 +105,6 @@
 .my_container>.Banner_Two>ul>li div{
   margin-top: 0.5rem;
   padding:0.5rem;
-  border-bottom: 2px solid transparent;
-}
-.my_container>.Banner_Two>ul>li:hover div{
-  border-bottom: 2px solid #E2001A;
 }
 .my_container>.Banner_Two>ul>li h3{
   font-size: 1rem;
@@ -72,38 +122,28 @@
 
 
 /*媒体选择下的显示样式*/
-@media screen and (min-width:760px){
+@media screen and (min-width:790px){
   .my_container>.Banner_Two>ul>li{
     width:31.5%;
   }
 }
-@media screen and (max-width:760px){
+@media screen and (max-width:790px){
   .my_container>.Banner_Two>ul>li{
     width:45%;
+  }
+  .swiper-Title a{
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width:480px){
   .my_container>.Banner_Two>ul>li p{
     display: none;
   }
+  .swiper-Title a{
+    display:none;
+  }
 }
 
 
 
 
-.swiper-Title a{
-  text-decoration: none;
-  width:20%;
-  color:#fff;
-  background: #E2001A;
-  position: absolute;
-  z-index: 5;
-  top:80%;
-  left: 15%;
-  padding:0.2rem 1rem;
-  transition: all 0.5s linear;
-}
-.swiper-Title a:hover{
-  color:#E2001A;
-  background: #fff;
-}

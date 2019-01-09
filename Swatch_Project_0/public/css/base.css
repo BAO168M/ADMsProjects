@@ -22,7 +22,7 @@ a:hover{
 
 
 /*媒体查询  */
-@media screen and (min-width:760px){
+@media screen and (min-width:790px){
     .WebFoot{
         position: relative;
         top:12rem;
@@ -32,7 +32,7 @@ a:hover{
         margin: 0 4.5rem;
     } 
 }
-@media screen and (max-width:760px){
+@media screen and (max-width:790px){
     .WebFoot{
         position: relative;
         top:5rem;
